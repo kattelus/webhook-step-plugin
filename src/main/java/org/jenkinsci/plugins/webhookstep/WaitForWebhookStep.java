@@ -17,8 +17,8 @@ public class WaitForWebhookStep extends Step implements Serializable {
     private final String token;
 
     @DataBoundConstructor
-    public WaitForWebhookStep(WebhookToken webhookToken) {
-        this.token = webhookToken.getToken();
+    public WaitForWebhookStep(String webhookToken) {
+        this.token = webhookToken;
     }
 
     public String getToken() {
